@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "DemoFont";
+    src: url(fonts/CrotahFreeVersionItalic-z8Ev3.ttf);
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    font-family: DemoFont,serif;
+}
+
+.rem{
+    margin: 10px;
+    border: 2px #000 solid;
+    background-color: #7fffd4;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.em {
+    margin: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 1em;
+}
+
+
+.percentage{
+    margin: 10px;
+    border: 2px #000 solid;
+    padding: 10px;
+    background-color: #f5f5dc;
+    width: 50%;
+}
+
+.fr img{
+    width: 100px;
+    float: right;
+}
+
+.fl img{
+    width: 100px;
+    float: left;
+}
+.nof img{
+    width: 100px;
+    float: none;
+}
+
+.divfloat div{
+    margin: 5px;
+    border: 2px #000 solid;
+    float: left;
+}
+.divfloat{
+    clear: left;
+}

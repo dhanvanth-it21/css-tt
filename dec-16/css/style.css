@@ -1,0 +1,75 @@
+
+div {
+    background-color: blue;
+    display: inline-block;
+}
+h1{
+    background-color: 10px red;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: 10px red solid;
+    margin: 20px 20px ;
+    padding: 50px 50px;
+}
+.bc {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    opacity: 0.8;
+}
+.bi {
+    width: 200px;
+    height: 200px;
+    background-image: url("https://w7.pngwing.com/pngs/941/692/png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png");
+    
+    
+}
+.br {
+    width: 500px;
+    height: 500px;
+    background-image: url("https://w7.pngwing.com/pngs/941/692/png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png");
+    background-repeat: repeat;
+}
+.br-x {
+    width: 500px;
+    height: 500px;
+    background-image: url("https://w7.pngwing.com/pngs/941/692/png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png");
+    background-repeat: repeat-x;
+}
+.br-y {
+    width: 500px;
+    height: 500px;
+    background-image: url("https://w7.pngwing.com/pngs/941/692/png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png");
+    background-repeat: repeat-y;
+}
+.nbr {
+    width: 500px;
+    height: 500px;
+    background-image: url("https://w7.pngwing.com/pngs/941/692/png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png");
+    background-repeat: no-repeat;
+}
+
+
+ul.cirlce {
+    list-style: square outside ;
+  }
+
+  .block{
+    display: block;
+    background-color: blueviolet;
+  }
+  .inline {
+    display: inline;
+    background-color: aqua;
+  }
+
+  .float-left img{
+    width: 200px;
+    height: auto;
+    float: left;
+    display: block;
+  }
+
+
