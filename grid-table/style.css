@@ -1,0 +1,27 @@
+.table{
+    display:grid;
+    border: 2px solid #000;
+    grid-template: repeat(5,1fr)/repeat(4,25%);
+}
+.grid{
+    border-bottom:#000 solid;
+    border-right:#000 solid;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+}
+
+.grid:nth-child(4n){
+    border-right: none;
+}
+.grid:nth-child(n+17):nth-child(-n+20){
+    border-bottom: none;
+}
+
+.grid:nth-child(n+1):nth-child(-n+4){
+    font-weight: bold;
+    font-size: large;
+}
+
+
+

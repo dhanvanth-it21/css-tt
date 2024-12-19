@@ -1,0 +1,11 @@
+.table{
+    width: 80%;
+    border: 2px #000 solid;
+}
+
+
+.cell{
+    display: inline-block;
+    width: 25%;
+    
+}
