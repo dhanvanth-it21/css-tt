@@ -16,6 +16,9 @@
 .row:last-child{
     border-bottom: none;
 }
+.row:hover {
+    background-color: antiquewhite;
+}
 
 .cell{
     height: 50px;
@@ -27,4 +30,7 @@
 
 .cell:last-child{
     border-right: none;
+}
+.cell:hover {
+    background-color: rgb(248, 175, 80);
 }

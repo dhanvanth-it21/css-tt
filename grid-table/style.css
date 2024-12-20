@@ -2,6 +2,14 @@
     display:grid;
     border: 2px solid #000;
     grid-template: repeat(5,1fr)/repeat(4,25%);
+    width: 100vh;
+   
+}   
+
+.container {
+    width: 500px;
+    height : 150px;
+    overflow: scroll;
 }
 .grid{
     border-bottom:#000 solid;
@@ -22,6 +30,11 @@
     font-weight: bold;
     font-size: large;
 }
+
+.grid:hover {
+    background-color: antiquewhite;
+}
+
 
 
 
