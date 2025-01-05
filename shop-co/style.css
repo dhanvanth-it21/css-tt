@@ -160,6 +160,7 @@
 }
 
 .about {
+  width: 50%;
   padding: 120px 0;
   display: flex;
   flex-direction: column;
@@ -168,8 +169,8 @@
 
 .about h1 {
   width: 100%;
-  max-width: 570px;
-  font-size: 64px;
+  max-width: 100%;
+  font-size: 4rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
@@ -304,7 +305,7 @@
   padding: 16px 54px 16px 54px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
-  margin: 40px auto;
+  margin: 40px auto;  
 }
 
 .items-divider {

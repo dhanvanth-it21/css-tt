@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+
+* button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Top bar style */
+.top-bars {
+  display: block;
+}
+
+.discount-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 38px;
+}
+
+.discount-bar p {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+.close-discount-bar {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 6vw;
+}
+
+.close-discount-bar button {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.close-discount-bar button i {
+  color: #fff;
+}
+
+.close-discount-bar:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.nav-bar {
+  width: 100%;
+}
+
+.nav-bar-container {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 40px;
+  align-items: center;
+  padding: 1.5rem 6.25rem;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.logo {
+  margin-bottom: 5px;
+}
+
+.logo h1 {
+  font-family: "Candal", serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 38.4px;
+  letter-spacing: -3px;
+  transform: scaleY(0.9);
+}
+
+.pages {
+  width: 100%;
+  max-width: 330px;
+}
+
+.pages ul {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 24px;
+  align-items: center;
+}
+
+.pages ul li {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.pages ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 567px;
+  background-color: #f0f0f0;
+  border-radius: 62px;
+  padding: 12px 16px 12px 16px;
+  gap: 12px;
+}
+
+.search-bar input {
+  background: none;
+  border: none;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.user-section {
+  flex-grow: 1;
+  width: 62px;
+  display: flex;
+  justify-content: end;
+  gap: 14px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* description view  */
+.description {
+  background-color: #f2f0f1;
+  width: 100%;
+}
+
+.description-container {
+  display: flex;
+  /* padding: 0 4vw 0 6vw; */
+  padding: 0rem 2rem 0 6.25rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+}
+
+.about {
+  width: 620px;
+  /* padding: 100px 0; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about h1 {
+  margin-top: 102px;
+  width: 100%;
+  max-width: 570px;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 64px;
+}
+
+.about p {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  max-width: 590px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 22px;
+  letter-spacing: -0.5px;
+}
+
+.about button {
+  color: #fff;
+  background-color: #000;
+  width: 210px;
+  height: 52px;
+  border-radius: 62px;
+  padding: 16px 54px 16px 54px;
+}
+.counts {
+  margin-top: 1rem;
+  margin-bottom: 116px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.each-counts {
+  font-family: "Poppins", sans-serif;
+}
+
+.each-counts h5 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.each-counts p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.divider {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+}
+
+.looks {
+  /* width: 50%; */
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.looks img {
+  width: 100%;
+  position: absolute;
+  top: -40px;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Brand bar */
+.brand-bar {
+  width: 100%;
+  background-color: #000;
+  padding: 45px 0;
+}
+
+.brand-bar ul {
+  padding: 0 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 6.5rem; */
+  list-style: none;
+}
+
+.brand-bar ul li {
+  color: #fff;
+  /* margin: 0 auto; */
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* New-Arrivals */
+.arrival-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.arrival-container-inner {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.new-arrivals {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0 6.25rem;
+  /* margin: 1.5rem 6vw 1.5rem 6vw; */
+}
+
+.new-arrivals h1 {
+  font-family: "Candal", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin: 72px 0 55px 0;
+}
+
+.cards {
+  width: 100%;
+}
+
+.new-arrivals ul li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.new-arrivals ul li .container {
+  width: 295px;
+}
+
+.single-card {
+  width: 100%;
+  height: 300px;
+  background-color: #f0eeed;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ratings {
+  width: 150px;
+  height: 20px;
+  background-color: #000;
+}
+
+.container.single-card,
+.container h5,
+.container .ratings,
+.container h3 {
+  margin-top: 8px;
+}
+
+.new-arrivals button {
+  color: #000;
+  background-color: #fff;
+  width: 210px;
+  height: 52px;
+  border-radius: 62px;
+  padding: 16px 54px 16px 54px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 40px auto;
+}
+
+.items-divider {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 5rem 6.25rem 1.5rem 6.25rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* gird  */
+.grid-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container-inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 5rem0 1.5rem 0;
+  padding: 0 6.25rem;
+}
+
+.dress-style-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.dress-style-container h1 {
+  text-align: center;
+  padding: 40px;
+  font-family: "Candal", serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.dress-style-grid {
+  display: grid;
+  grid-template-areas:
+    "casual formal formal"
+    "party party gym";
+  gap: 20px;
+  position: relative;
+}
+
+.dress-style-grid > div {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  justify-items: end;
+}
+
+.grid1 {
+  grid-area: casual;
+}
+
+.grid2 {
+  grid-area: formal;
+}
+
+.grid3 {
+  grid-area: party;
+}
+
+.grid4 {
+  grid-area: gym;
+}
+
+.dress-style-grid h3 {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 36px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.happy-customers-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.happy-customers {
+  padding: 0 6.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.happy-customers-heading {
+  display: flex;
+  padding: 80px 0 40px 0;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.happy-customers h1 {
+  text-align: left;
+  font-family: "Candal", serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.happy-customers .mover {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.happy-customers .mover button i {
+  font-size: 25px;
+}
+
+.happy-customers-body ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.happy-customers-body ul li {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 28px 32px;
+  font-family: "Poppins", sans-serif;
+}
+
+.happy-customers-body ul li .review {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.happy-customers-body ul li .review .ratings {
+  margin-bottom: 3px;
+}
+
+.happy-customers-body ul li p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.happy-customers-body ul li i {
+  color: #01ab31;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.footer-heading {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.latest-update {
+  background-color: #000;
+  margin: 0 6.25rem;
+  border-radius: 20px;
+  padding: 43px 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-update h1 {
+  width: 50%;
+  text-align: left;
+  font-family: "Candal", serif;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.emai-address {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.emai-address .input-container {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 62px;
+  padding: 12px 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+.input-container input {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #000;
+}
+
+
+.input-container  button{
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
