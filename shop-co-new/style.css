@@ -368,6 +368,8 @@ body {
 
 .cards {
   width: 100%;
+  overflow: scroll;
+  
 }
 
 .new-arrivals ul li {
@@ -531,7 +533,7 @@ body {
   display: flex;
   padding: 0 0 40px 0;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: end;
 }
 
 .happy-customers h1 {
@@ -555,6 +557,7 @@ body {
   list-style-type: none;
   display: flex;
   gap: 20px;
+  overflow: scroll;
 }
 
 .happy-customers-body ul li {
@@ -562,6 +565,7 @@ body {
   border-radius: 20px;
   padding: 28px 32px;
   font-family: "Poppins", sans-serif;
+
 }
 
 .happy-customers-body ul li .review {
@@ -588,6 +592,7 @@ body {
 /* --------------------------------------------------------------------------------------------------------------- */
 
 .footer-outter {
+  margin-top: 70px;
   position: relative;
 }
 
@@ -599,6 +604,7 @@ body {
 }
 
 .latest-update {
+
   background-color: #000;
   margin: 0 min(6.25rem, 5vw);
   border-radius: 20px;
@@ -1176,7 +1182,9 @@ footer {
 
 @media screen and (max-width: 1000px) {
   .dress-style-container h1 {
-    font-size: 40px;
+    font-family: "Candal", sans-serif;
+    font-size: 3rem;
+    /* font-size: 40px; */
     transition: all 0.3s;
   }
 }
@@ -1262,7 +1270,8 @@ footer {
   }
 
   .happy-customers h1 {
-    font-size: 40px;
+    font-family: "Candal", sans-serif;
+    font-size: 3rem;
     transition: all 0.3s;
   }
 }
