@@ -66,6 +66,7 @@ body {
   text-decoration: underline;
 }
 
+
 .close-discount-bar {
   width: 20px;
   height: 20px;
@@ -146,6 +147,13 @@ body {
   color: inherit;
 }
 
+.pages ul li a:hover {
+  color: #000000;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .search-bar {
   display: flex;
   width: 100%;
@@ -155,6 +163,12 @@ body {
   padding: 12px 16px 12px 16px;
   gap: 12px;
 }
+
+.search-bar:hover {
+  background-color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
 
 .search-bar input {
   background: none;
@@ -184,6 +198,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon:hover {
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  transition: all 0.1s ease;
 }
 
 .nav-left,
@@ -264,6 +284,11 @@ body {
   height: 52px;
   border-radius: 62px;
   padding: 16px 54px 16px 54px;
+  cursor: pointer;
+}
+
+.about button:hover {
+  background-color: #282828;
 }
 
 .counts {
@@ -336,6 +361,11 @@ body {
   object-fit: contain;
 }
 
+.brand-bar ul li img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 /* --------------------------------------------------------------------------------------------------------------- */
 /* New-Arrivals */
 .arrival-container {
@@ -368,8 +398,11 @@ body {
 
 .cards {
   width: 100%;
-  overflow: scroll;
-  
+  overflow-x: scroll;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
 }
 
 .new-arrivals ul li {
@@ -395,12 +428,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; 
 }
 
 .single-card img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+
+.hover-text {
+  position: absolute;
+  bottom: 10%;
+  transform: scale(0);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  transition: transform 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container:hover .hover-text {
+  transform:  scale(1);
+}
+
+.hover-text:hover {
+  background: rgba(0, 0, 0, 0.6);
+  
+}
+
+
+
+.container:hover .single-card img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+ cursor: pointer;  
 }
 
 .ratings {
@@ -431,6 +503,11 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   margin: 40px auto;
+}
+
+.new-arrivals button:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
 }
 
 .items-divider {
@@ -465,8 +542,9 @@ body {
   text-align: center;
   padding: 40px;
   font-family: "Candal", serif;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .dress-style-grid {
@@ -539,8 +617,9 @@ body {
 .happy-customers h1 {
   text-align: left;
   font-family: "Candal", serif;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .happy-customers .mover {
@@ -557,21 +636,29 @@ body {
   list-style-type: none;
   display: flex;
   gap: 20px;
-  overflow: scroll;
+  overflow-x: scroll;
+}
+
+.happy-customers-body ul::-webkit-scrollbar {
+  display: none;
 }
 
 .happy-customers-body ul li {
+  flex: 1; 
+  max-height: 300px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 28px 32px;
   font-family: "Poppins", sans-serif;
-
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .happy-customers-body ul li .review {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
+  min-width: 250px;
 }
 
 .happy-customers-body ul li .review .ratings {
@@ -592,7 +679,7 @@ body {
 /* --------------------------------------------------------------------------------------------------------------- */
 
 .footer-outter {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   position: relative;
 }
 
@@ -604,7 +691,6 @@ body {
 }
 
 .latest-update {
-
   background-color: #000;
   margin: 0 min(6.25rem, 5vw);
   border-radius: 20px;
@@ -642,6 +728,11 @@ body {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.email-address .input-container:hover {
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
 .input-container input {
   background: none;
   border: none;
@@ -654,6 +745,11 @@ body {
   width: 100%;
   text-align: center;
 }
+
+.input-container button:hover {
+  cursor: pointer;
+}
+
 
 footer {
   width: 100%;
@@ -697,6 +793,7 @@ footer {
 }
 
 .foorter-body-comp > div > p {
+  font-family: "Poppins", sans-serif;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -774,6 +871,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .discount-bar p {
+    font-size: 12px;
+  }
+  
+}
 /* --------------------------------------------------------------------------------------------------------------- */
 /* --------------nav bar-------------------- */
 
@@ -851,7 +954,7 @@ footer {
 @media screen and (max-width: 995px) {
   .about h1 {
     font-size: 2.5rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 2.5rem;
     transition: all 0.3s;
   }
@@ -958,7 +1061,7 @@ footer {
 
   .about {
     width: 100%;
-    gap: 1rem;
+    gap: 2rem;
     align-items: start;
   }
 
@@ -1157,6 +1260,12 @@ footer {
     height: 26px;
     transition: all 0.3s;
   }
+
+.brand-bar > ul > li:nth-child(2),
+.brand-bar > ul > li:nth-child(4){
+    scale: 0.9;
+    transition: all 0.3s;
+  }
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
@@ -1184,6 +1293,7 @@ footer {
   .dress-style-container h1 {
     font-family: "Candal", sans-serif;
     font-size: 3rem;
+
     /* font-size: 40px; */
     transition: all 0.3s;
   }
@@ -1248,8 +1358,32 @@ footer {
   }
 }
 @media screen and (max-width: 500px) {
+
+  .dress-style-container {
+    padding: 10px;
+  }
+
   .dress-style-container h1 {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .grid1 > div > img,
+  .grid4 > div > img
+   {
+    transform: translateX(5%);
+  }
+
+  .grid1 > h3,
+  .grid4 > h3 {
+    z-index: 1;
+    transition: all 0.3s;
+  }
+
+  .grid2 > div > img,
+  .grid3 > div > img
+   {
+    transform: translateX(30%);
   }
 }
 
@@ -1257,21 +1391,35 @@ footer {
 /* -------------------------------------review----------------------------------------- */
 
 @media screen and (max-width: 1090px) {
-  .happy-customers-body ul li:last-child {
+  /* .happy-customers-body ul li:last-child {
     display: none;
     transition: all 0.3s;
-  }
+  } */
 }
 
 @media screen and (max-width: 880px) {
-  .happy-customers-body ul li:nth-child(2) {
+  /* .happy-customers-body ul li:nth-child(2) {
     display: none;
     transition: all 0.3s;
-  }
+  } */
 
   .happy-customers h1 {
     font-family: "Candal", sans-serif;
     font-size: 3rem;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .happy-customers h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 370px) {
+  .happy-customers h1 {
+    font-size: 2rem;
     transition: all 0.3s;
   }
 }
@@ -1320,6 +1468,9 @@ footer {
 
   .foorter-body-comp div {
     flex: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .foorter-body-comp > div h1 {
@@ -1361,9 +1512,8 @@ footer {
   }
 
   .items-divider2 {
-
     margin: 3rem 0 1.5rem 0;
-}
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1377,11 +1527,8 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 700px) {
-
   .footer-footer {
     flex-direction: column;
-}
-  
+  }
 }
