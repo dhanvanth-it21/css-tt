@@ -563,7 +563,7 @@ body {
   overflow: hidden;
   justify-items: end;
   flex: 1;
-  min-width: 310px;
+  min-width: 250px;
 }
 
 .grid1 {
@@ -1223,6 +1223,8 @@ footer {
   }
 }
 
+
+
 /* --------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1150px) {
@@ -1306,7 +1308,7 @@ footer {
   }
 }
 @media screen and (max-width: 1120px) {
-  .dress-style-grid h3 {
+  .dress-style-  h3 {
     font-size: 26px;
     transition: all 0.3s;
   }
@@ -1385,6 +1387,23 @@ footer {
    {
     transform: translateX(30%);
   }
+}
+
+@media screen and (max-width: 370px) {
+
+
+  .grid1 > div > img,
+  .grid4 > div > img
+   {
+    transform: translateX(10%);
+  }
+
+  .grid2 > div > img,
+  .grid3 > div > img
+   {
+    transform: translateX(40%);
+  }
+  
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -1531,4 +1550,33 @@ footer {
   .footer-footer {
     flex-direction: column;
   }
+}
+
+
+@media screen and (max-width: 350px) {
+  .about h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 40px;
+    transition: all 0.3s;
+  }
+  
+}
+
+@media screen and (max-width: 370px) {
+  .latest-update h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    transition: all 0.3s;
+    width: 100%;
+  }
+
+  body > div.footer-outter > div > div > div > div {
+    overflow: hidden;
+  }
+
+  .footer-heading {
+    transform: translateY(40%);
+  }
+  
 }
